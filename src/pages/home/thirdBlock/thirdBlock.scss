@@ -1,0 +1,176 @@
+@import "../../../source/styles/mixin.scss";
+
+.ThirdBlock{
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 100px 10px 16px;
+
+  .headerBlock{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    .header{
+      font-size: 64px;
+      color: black;
+      text-transform: uppercase;
+      line-height: normal;
+      font-family: 'Trap-Regular', sans-serif;
+    }
+
+    .underHeader{
+      position: relative;
+      font-size: 20px;
+      font-family: 'Trap-Regular', sans-serif;
+      color: black;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-top: 20px;
+      &:before{
+        content: '';
+        position: absolute;
+        left: -24px;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-color: #B5CDB7;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .circleCont{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+  }
+
+  .projectText{
+    font-size: 16px;
+    font-family: "Trap-Regular", sans-serif;
+    text-transform: uppercase;
+    color: black;
+    line-height: normal;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .text1{
+    left: 0;
+    top: 35%;
+  }
+  .text2{
+    right: 0;
+    bottom: 10%;
+  }
+  .text3{
+    left: 0;
+    bottom: 30%;
+  }
+
+
+  .circleCont1{
+    .textImgSlide{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      animation: slideAnim 10s linear infinite;
+    }
+  }
+  .circleCont2{
+    padding-left: 5%;
+
+    .textImgSlide{
+      position: absolute;
+      z-index: 1;
+      right: -20% !important;
+      bottom: -100px !important;
+      animation: slideAnim2 13s linear infinite;
+
+    }
+
+    .circle{
+      position: relative;
+      z-index: 2;
+      &:nth-child(1){
+        transform: translateY(200px);
+      }
+      &:nth-child(2){
+        transform: translateY(-150px);
+      }
+    }
+
+  }
+  .circleCont3{
+    justify-content: end !important;
+    width: 85%;
+
+    .textImgSlide{
+      position: absolute;
+      z-index: 1;
+      left: -40% !important;
+      bottom: 0 !important;
+      animation: slideAnim 8s linear infinite;
+    }
+
+  }
+
+  .line1{
+    width: 300%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+      top: 50%;
+      left: -100%;
+      rotate: 40deg;
+  }
+  .line2{
+    width: 300%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    left: -100%;
+    rotate: 10deg;
+  }
+
+}
+
+@keyframes slideAnim {
+  0%{
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(150%);
+  }
+}
+
+@keyframes slideAnim2 {
+  0%{
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+}

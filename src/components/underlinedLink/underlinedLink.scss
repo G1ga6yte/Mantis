@@ -1,0 +1,51 @@
+
+
+.UnderlinedLink{
+  position: relative;
+  width: max-content;
+  z-index: 5;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 6;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease-in-out all;
+  }
+
+  .textLine {
+    width: max-content;
+    display: flex;
+    line-height: 100%;
+    padding: 2px 0 0;
+  }
+
+  .textLine2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .letter {
+    transition: 0.5s ease-in-out all;
+    text-transform: uppercase;
+    transform: translateY(-100%);
+    min-width: 6px;
+  }
+
+
+  &:hover {
+    .letter {
+      transform: translateY(0);
+    }
+  }
+
+
+}

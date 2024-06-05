@@ -1,0 +1,18 @@
+@import "../styles/mixin.scss";
+.G-Container{
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.flexGrow{
+  flex-grow: 1;
+}
