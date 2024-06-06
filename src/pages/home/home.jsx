@@ -5,6 +5,8 @@ import SecondBlock from "./secondBlock/secondBlock";
 import ThirdBlock from "./thirdBlock/thirdBlock";
 import ForthBlock from "./forthBlock/forthBlock";
 import {useCartContext} from "../../CartContext";
+import FifthBlock from "./fifthBlock/fifthBlock";
+import FooterBlock from "./footerBlock/footerBlock";
 
 function Home() {
   const {thirdBlock} = useCartContext()
@@ -17,6 +19,8 @@ function Home() {
        <div ref={thirdBlock}>
          <ThirdBlock/>
          <ForthBlock/>
+         <FifthBlock/>
+         <FooterBlock/>
        </div>
        
      </div>

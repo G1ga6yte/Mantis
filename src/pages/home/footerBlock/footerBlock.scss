@@ -1,0 +1,154 @@
+
+
+.FooterBlock{
+  width: 100%;
+  padding: 90px 50px 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid black;
+
+
+  .mainCont{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto 90px;
+
+    .leftPrg{
+      font-size: 64px;
+      font-family: 'Trap-Regular', sans-serif;
+      color: black;
+      line-height: normal;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .headerBlock{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -20%);
+
+      .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .headerPrg{
+          font-size: 150px;
+          font-family: 'Trap-SemiBold', sans-serif;
+          line-height: normal;
+          text-transform: uppercase;
+          &:nth-child(1){
+            color: #B5CDB7;
+          }
+          &:nth-child(2){
+            color: black;
+          }
+        }
+        .rightsImg{
+          margin-left: 24px;
+        }
+      }
+
+    }
+
+    .linksCont{
+      display: flex;
+      gap: 50px;
+      .linksBlock{
+        display: flex;
+        flex-direction: column;
+        .link{
+          text-decoration: none;
+          padding: 4px 6px;
+          margin-bottom: 15px;
+          &:hover{
+            .wordBlock{
+              &:before{
+                width: 100%;
+              }
+            }
+            .letter{
+              transform: translateY(-100%);
+            }
+          }
+          .wordBlock{
+            position: relative;
+            cursor: pointer;
+            height: max-content;
+            overflow: hidden;
+            width: max-content;
+            &:before{
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: black;
+              transition: 1s ease-in-out all;
+            }
+            .line{
+              display: flex;
+              height: max-content;
+              .letter{
+                color: black;
+                font-size: 32px;
+                font-family: 'Trap-Medium', sans-serif;
+                line-height: 120%;
+                min-width: 8px;
+              }
+            }
+
+            .line2{
+              position: absolute;
+              left: 0;
+              top: 100%;
+            }
+
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+  .termsCont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    justify-content: center;
+    gap: 96px;
+    .prg{
+      font-family: 'Trap-Regular', sans-serif;
+      color: #C2C2C2;
+      font-size: 16px;
+      line-height: normal;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .termsLinksBlock{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+
+
+
+
+
+
+}

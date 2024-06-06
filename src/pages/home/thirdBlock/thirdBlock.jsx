@@ -7,7 +7,7 @@ function ThirdBlock () {
   
   
   return(
-     <div className="ThirdBlock">
+     <div className="ThirdBlock no-select">
        
        <div className="headerBlock">
          <p className="header">( our futured project )</p>
